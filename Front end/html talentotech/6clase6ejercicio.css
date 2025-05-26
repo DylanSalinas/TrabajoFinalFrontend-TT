@@ -1,0 +1,57 @@
+html {
+    font-size: 10px;
+}
+.banner {
+    background-image: url(imagenes/Inosuke_Hashibira_-_Anime.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+body {
+    background-color: brown;
+    font-family: "Nunito", sans-serif;
+}
+header {
+
+    width: 70vw;
+    background-color: rgb(70, 136, 81);
+}
+
+img, iframe {
+    width: 800px;
+    display: inline-block;
+    vertical-align: top;
+}
+ header nav{
+    display: block;
+}
+
+ul {
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+    border: 5px solid black;
+    padding: 2px;
+    margin: 1rem;
+}
+#h2visitanos {
+    display: inline-block;
+    border: 1px dotted black;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+footer {
+    background-color: rgba(77, 74, 74, 0.685);
+}
+
+.TextoVerde {
+    color: #1d9c28;
+    font-size: 2rem;
+    font-family: "Nunito", sans-serif;
+    
+}

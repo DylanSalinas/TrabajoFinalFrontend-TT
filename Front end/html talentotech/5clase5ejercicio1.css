@@ -1,0 +1,37 @@
+
+header {
+    background-color: rgb(70, 136, 81);
+}
+body {
+    background-color: brown;
+    font-family: "Nunito", sans-serif;
+}
+img, iframe {
+    width: 800px;
+    display: inline-block;
+    vertical-align: top;
+}
+ header nav{
+    display: block;
+}
+
+ul {
+    background-color: rgb(255, 255, 255);
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+footer {
+    background-color: rgba(77, 74, 74, 0.685);
+}
+
+.TextoVerde {
+    color: #1d9c28;
+    font-size: 2rem;
+    font-family: "Nunito", sans-serif;
+    
+}
