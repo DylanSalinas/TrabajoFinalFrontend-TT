@@ -318,14 +318,15 @@ form button {
 }
 
 .carritoCompras {
-    margin: 2rem auto 0;
-    border: 1px solid #ddd;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem;
     border-radius: 10px;
-    padding: 2rem;
-    max-width: 500px;
-    min-width: 400px;
-    background-color: #f9f9f9;
-    color: #33082D;
+    color: rgb(0, 0, 0);
+    font-family: "Nunito", sans-serif;
+    font-size-adjust: 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px black;
 }
 
 .carritoCompras h2 {
@@ -362,4 +363,22 @@ form button {
     margin-top: 10px;
     padding-top: 10px;
     border-top: 1px solid #eee;
+}
+.btn-comprar {
+  background-color: #3f8ab6;  
+  color: white;               
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-comprar:hover {
+  background-color: #316e91;   
+  transform: scale(1.05);     
 }

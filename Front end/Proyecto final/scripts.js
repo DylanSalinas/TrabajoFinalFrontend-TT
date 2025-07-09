@@ -1,11 +1,100 @@
 
 const productos = [
+    // ROPA
     {
         id: "01",
         imagen: "imagenes/botas1.png",
         nombre: "Botas Alaska",
-        precio: "30,000",
+        precio: 30000
     },
+    {
+        id: "02",
+        imagen: "imagenes/botas2.png",
+        nombre: "Botas Oxi",
+        precio: 25000
+    },
+    {
+        id: "03",
+        imagen: "imagenes/conjunto nieve 1.png",
+        nombre: "Conjunto impermeable Alaska 1",
+        precio: 35000
+    },
+    {
+        id: "04",
+        imagen: "imagenes/conjunto nieve 2.png",
+        nombre: "Conjunto impermeable Alaska 2",
+        precio: 35000
+    },
+    {
+        id: "05",
+        imagen: "imagenes/termicanieve1.jpg",
+        nombre: "Calsa térmica Solo",
+        precio: 25000
+    },
+    {
+        id: "06",
+        imagen: "imagenes/termicanieve2.png",
+        nombre: "Calsa térmica Alaska",
+        precio: 25000
+    },
+
+    // EQUIPAMIENTO
+    {
+        id: "07",
+        imagen: "imagenes/skies1.png",
+        nombre: "Skies OBRIEN S1100",
+        precio: 90000
+    },
+    {
+        id: "08",
+        imagen: "imagenes/skies3.png",
+        nombre: "Skies Oxi",
+        precio: 80000
+    },
+    {
+        id: "09",
+        imagen: "imagenes/snowboard1.png",
+        nombre: "STAUBER Summit Snowboard",
+        precio: 100000
+    },
+    {
+        id: "10",
+        imagen: "imagenes/snowboard2.png",
+        nombre: "Nomad Easy Snowboard",
+        precio: 90000
+    },
+    {
+        id: "11",
+        imagen: "imagenes/snowboard3.png",
+        nombre: "Snowboard Oxi",
+        precio: 85000
+    },
+    {
+        id: "12",
+        imagen: "imagenes/motonieve.png",
+        nombre: "Moto de nieve Oxi",
+        precio: 13996000
+    },
+
+    // CURSOS
+    {
+        id: "13",
+        imagen: "https://img.youtube.com/vi/-zX7UcPdfwk/0.jpg", // Vista previa de YouTube
+        nombre: "Curso de Skies",
+        precio: 40000
+    },
+    {
+        id: "14",
+        imagen: "https://img.youtube.com/vi/V6k9PzdqHgM/0.jpg",
+        nombre: "Curso de Snowboard",
+        precio: 40000
+    },
+    {
+        id: "15",
+        imagen: "https://img.youtube.com/vi/uSz8LFJWCCI/0.jpg",
+        nombre: "Curso de Moto de Nieve",
+        precio: 50000
+    }
 ];
 
 // Función de comparación para ordenar productos por ID de forma ascendente.
@@ -69,18 +158,18 @@ function agregarProductos() {
     for (let i = 0; i < productos.length; i++) {
         const producto = productos[i];
 
-        divProductos.insertAdjacentHTML("beforeend",
+        divProductos.insertAdjacentHTML("afterbegin",
             `
-            <div class="card">
-                <img src="${producto.imagen}" alt="${producto.nombre}">
-                <div class="info">
-                <h4>${producto.nombre}</h4>
-                <span>Precio: $${producto.precio}</span>
-                <button class="btn-comprar" type="button" data-id="${producto.id}">Comprar</button>
-                </div>
-            </div>
-            `
-        );
+    <div class="card">
+        <a href="#"><img src="${producto.imagen}" alt="${producto.nombre}" class="card"></a>
+        <div class="info">
+            <h3>${producto.nombre}</h3>
+            <p>$${producto.precio}</p>
+            <button class="btn-comprar" type="button" data-id="${producto.id}">Comprar</button>
+        </div>
+    </div>
+    `
+);
 
     }
 
